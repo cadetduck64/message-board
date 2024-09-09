@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
+const http = require("http");
 
 app.set("views", path.join(__dirname, "views"));
 
@@ -20,7 +21,7 @@ app.use("/", index);
 app.use("/newform", newForm);
 app.use("/details", details);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log("app running");
