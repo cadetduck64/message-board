@@ -3,17 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <title>New Message</title>
   </head>
   <body>
     <a href="/"><button>Go Back</button></a>
     <form class="index-message-div" action="/newform" method="post">
       <h2>Name</h2>
-      <input maxlength='20' class="name-input" name="name" type="text" placeholder="Anonymous" />
+      <input
+        maxlength="20"
+        class="name-input"
+        name="name"
+        type="text"
+        placeholder="Anonymous"
+      />
       <h2>Message</h2>
-      <textarea required maxlength="1000"  class="message-input-box"  name="message" type="textarea" placeholder="Message"></textarea>
+      <textarea
+        required
+        maxlength="1000"
+        class="message-input-box"
+        name="message"
+        type="textarea"
+        placeholder="Message"
+      ></textarea>
       <button type="submit">Submit</button>
     </form>
   </body>
