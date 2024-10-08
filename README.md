@@ -1,10 +1,4 @@
-# Node.js template
+This is a node based message board app that uses express and postgre SQL to hold a database of user posted messages.
 
-This is a Node.js project.
-
-Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
-
-## Resources
-
-- [CodeSandbox — Docs](https://codesandbox.io/docs/learn)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
+Be sure that your version of Node, Express and Postgre are up to date (the package.json file should make sure of this for you)
+you will have to create your own environment variables or hardcode them into the pool.js file
