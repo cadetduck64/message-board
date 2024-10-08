@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Message Details</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
   </head>
   <body>
     <a href="/"><button>Go Back</button></a>
     <ol class="index-message-div">
-      <h2><%= detail.user %></h2>
-      <p class="main-date-posted">Date Posted: <%= detail.added %></p>
-      <p class="message-display-box"><%= detail.text %></p>
+      <h2 ><%= detail.username %></h2>
+      <p class="main-date-posted">Date Posted: <%= detail.date_posted %></p>
+      <p class="message-display-box"><%= detail.message %></p>
     </ol>
   </body>
 </html>

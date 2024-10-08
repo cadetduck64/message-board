@@ -1,3 +1,10 @@
-a user friendly, express based message board you can use to communicate with friends, teammates or even random people
+# Node.js template
 
-check out the live verseion here: https://gilj-message-board.adaptable.app/
+This is a Node.js project.
+
+Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
+
+## Resources
+
+- [CodeSandbox — Docs](https://codesandbox.io/docs/learn)
+- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)

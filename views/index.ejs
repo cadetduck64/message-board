@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css">
-    <title>Message Board</title>
+    <title>Document</title>
   </head>
   <body>
     <h1>Message Board</h1>
@@ -15,9 +15,9 @@
     <% messageList.map((index) => {%>
     <ol class="index-message-div">
       <p><%# index.id %></p>
-      <h2><%= index.user %></h2>
-      <p class="main-date-posted">Date Posted: <%= index.added %></p>
-      <p class="message-display-box"><%= index.text %></p>
+      <h2><%= index.username %></h2>
+      <p class="main-date-posted">Date Posted: <%= index.date_posted %></p>
+      <p class="message-display-box"><%= index.message %></p>
       <!-- <a href="/details"><button>Details</button></a> -->
       <a href="details/<%= index.id %>""><button>Details</button></a>
     </ol>

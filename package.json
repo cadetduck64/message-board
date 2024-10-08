@@ -10,8 +10,10 @@
   "author": "Ives van Hoorne",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "pg": "^8.13.0",
     "short-unique-id": "^5.2.0"
   }
 }
