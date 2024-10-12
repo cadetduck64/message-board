@@ -23,3 +23,8 @@ services:
   buildCommand: yarn --frozen-lockfile install
   startCommand: node app.js
 version: "1"
+databases:
+  - name: database_messages
+    plan: free
+    region: virginia
+    user: gil
