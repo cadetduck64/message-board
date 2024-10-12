@@ -1,0 +1,25 @@
+# Exported from Render on 2024-10-09T15:16:54Z
+services:
+- type: web
+  name: message-board
+  runtime: node
+  repo: https://github.com/cadetduck64/message-board
+  branch: Message-board-(postgre-sql)
+  plan: free
+  envVars:
+  - key: PORT
+    sync: false
+  - key: PASSWORD
+    sync: false
+  - key: DATABASE
+    sync: false
+  - key: USER
+    sync: false
+  - key: HOST
+    sync: false
+  - key: NODE_ENV
+    sync: false
+  region: virginia
+  buildCommand: yarn --frozen-lockfile install
+  startCommand: node app.js
+version: "1"
