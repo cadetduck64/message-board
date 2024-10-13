@@ -1,16 +1,16 @@
-envVariable = process.env
-console.log(envVariable.USER)
-
 require('dotenv').config()
+envVariable = process.env
+console.log('logged in as: ' + envVariable.USER)
+console.log('database: ' + envVariable.DATABASE)
+console.log('pool port: ' + envVariable.PORT)
+
 const { Pool } = require("pg");
 
 // All of the following properties should be read from environment variables
-// We're hardcoding them here for simplicity
 module.exports = new Pool({
-  host: envVariable.HOST, // or wherever the db is hosted
+  host: envVariable.HOST,
   user: envVariable.USER,
   database: envVariable.DATABASE,
   password: envVariable.PASSWORD,
-  port: envVariable.PORT // The default port
+  port: envVariable.PORT
 });
-
