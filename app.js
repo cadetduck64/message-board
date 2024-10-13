@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const app = express();
 const path = require("node:path");
@@ -20,8 +21,8 @@ app.use("/", index);
 app.use("/newform", newForm);
 app.use("/details", details);
 
-const PORT = 10000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
-  console.log("app running");
+  console.log("app running on port: " + PORT);
 });
