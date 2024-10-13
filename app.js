@@ -20,7 +20,7 @@ app.use("/", index);
 app.use("/newform", newForm);
 app.use("/details", details);
 
-const PORT = 3000;
+const PORT = 10000;
 
 app.listen(PORT, () => {
   console.log("app running");
