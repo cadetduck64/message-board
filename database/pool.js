@@ -12,5 +12,5 @@ module.exports = new Pool({
   user: envVariable.USER,
   database: envVariable.DATABASE,
   password: envVariable.PASSWORD,
-  port: envVariable.PORT
+  port: envVariable.DATABASE_PORT
 });
