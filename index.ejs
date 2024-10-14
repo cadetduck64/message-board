@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Message Board</title>
+  </head>
+  <body>
+    <h1>Message Board</h1>
+    <% if (messageList.length < 1) {%>
+      <h2 class="no-message-div"><%= 'Theres no messages... yet!' %></h2>
+    <% } %>
+    <div id="main-message-div">
+    <% messageList.map((index) => {%>
+    <ol class="index-message-div">
+      <p><%# index.id %></p>
+      <h2><%= index.username %></h2>
+      <p class="main-date-posted">Date Posted: <%= index.date_posted %></p>
+      <p class="message-display-box"><%= index.message %></p>
+      <!-- <a href="/details"><button>Details</button></a> -->
+      <a href="details/<%= index.id %>""><button>Details</button></a>
+    </ol>
+    <% }) %>
+  </div>
+    <a href="/newform"><button class="new-message-button">NEW MESSAGE</button></a>
+  </body>
+</html>
+ 
