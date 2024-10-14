@@ -13,7 +13,7 @@ module.exports = new Pool({
   database: envVariable.DATABASE,
   password: envVariable.PASSWORD,
   port: envVariable.PORT,
-  idleTimeoutMillis: 0,
-  connectionTimeoutMillis: 0,
+  // idleTimeoutMillis: 0,
+  // connectionTimeoutMillis: 0,
 });
 
