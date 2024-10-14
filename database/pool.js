@@ -2,7 +2,7 @@ require('dotenv').config()
 envVariable = process.env
 console.log('logged in as: ' + envVariable.USER)
 console.log('database: ' + envVariable.DATABASE)
-console.log('pool port: ' + envVariable.PORT)
+console.log('pool port: ' + envVariable.DATABASE_PORT)
 
 const { Pool } = require("pg");
 
